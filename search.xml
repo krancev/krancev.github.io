@@ -292,7 +292,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907212142278.png"
+                     data-src="/images/Unity3D%5Cimage-20230907212142278.png"
                       alt="image-20230907212142278"
                 ></p>
 </li>
@@ -302,7 +302,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907212230239.png"
+                     data-src="/images/Unity3D%5Cimage-20230907212230239.png"
                       alt="image-20230907212230239"
                 ></p>
 </li>
@@ -310,7 +310,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907212245575.png"
+                     data-src="/images/Unity3D%5Cimage-20230907212245575.png"
                       alt="image-20230907212245575"
                 ></p>
 </li>
@@ -322,7 +322,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907212640407.png"
+                     data-src="/images/Unity3D%5Cimage-20230907212640407.png"
                       alt="image-20230907212640407"
                 ></p>
 <h2 id="二、创建植被或地面-PolyBrush-Probuilder"><a href="#二、创建植被或地面-PolyBrush-Probuilder" class="headerlink" title="二、创建植被或地面(PolyBrush &#x2F; Probuilder)"></a>二、创建植被或地面(PolyBrush &#x2F; Probuilder)</h2><h3 id="1、PolyBrush"><a href="#1、PolyBrush" class="headerlink" title="1、PolyBrush"></a>1、PolyBrush</h3><p>​	在Package Manager里面下载组件之后可以刷植被</p>
@@ -332,7 +332,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907213652201.png"
+                     data-src="/images/Unity3D%5Cimage-20230907213652201.png"
                       alt="image-20230907213652201"
                 ></p>
 </li>
@@ -345,7 +345,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907223726816.png"
+                     data-src="/images/Unity3D%5Cimage-20230907223726816.png"
                       alt="image-20230907223726816"
                 ></p>
 </li>
@@ -353,7 +353,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907223739749.png"
+                     data-src="/images/Unity3D%5Cimage-20230907223739749.png"
                       alt="image-20230907223739749"
                 ></p>
 </li>
@@ -362,14 +362,14 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907223909569.png"
+                     data-src="/images/Unity3D%5Cimage-20230907223909569.png"
                       alt="image-20230907223909569"
                 ></p>
 <p>需要在Navigation的Bake中调节相应的参数</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230907223954881.png"
+                     data-src="/images/Unity3D%5Cimage-20230907223954881.png"
                       alt="image-20230907223954881"
                 ></p>
 </li>
@@ -385,7 +385,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230908101905259.png"
+                     data-src="/images/Unity3D%5Cimage-20230908101905259.png"
                       alt="image-20230908101905259"
                 ></p>
 <div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Events;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Important to show</span></span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line">[<span class="meta">System.Serializable</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EventVector3</span> : <span class="title">UnityEvent</span>&lt;<span class="title">Vector3</span>&gt;&#123;&#125;</span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> EventVector3 OnMouseClicked;</span><br><span class="line">    RaycastHit hitInfo;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Update is called once per frame</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        SetCursorTexture();</span><br><span class="line">        MouseControl();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetCursorTexture</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);</span><br><span class="line">        <span class="keyword">if</span>(Physics.Raycast(ray, <span class="keyword">out</span> hitInfo))&#123;</span><br><span class="line">            <span class="comment">// 切换鼠标贴图</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Mouse Control</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">MouseControl</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 鼠标左键为0,并且点击不为空</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetMouseButtonDown(<span class="number">0</span>) &amp;&amp; hitInfo.collider != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))&#123;</span><br><span class="line">                OnMouseClicked?.Invoke(hitInfo.point);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
@@ -402,7 +402,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230908104104983.png"
+                     data-src="/images/Unity3D%5Cimage-20230908104104983.png"
                       alt="image-20230908104104983"
                 ></p>
 <ul>
@@ -453,7 +453,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230908135850939.png"
+                     data-src="/images/Unity3D%5Cimage-20230908135850939.png"
                       alt="image-20230908135850939"
                 ></p>
 </li>
@@ -465,7 +465,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230908140905243.png"
+                     data-src="/images/Unity3D%5Cimage-20230908140905243.png"
                       alt="image-20230908140905243"
                 ></p>
 </li>
@@ -517,7 +517,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230908220958406.png"
+                     data-src="/images/Unity3D%5Cimage-20230908220958406.png"
                       alt="image-20230908220958406"
                 ></p>
 <p>每次都在Patrol的范围内随机选择一个点进行移动，但是可能会跑出去。每次都在新的位置的Patrol范围内移动。</p>
@@ -543,7 +543,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230909134034306.png"
+                     data-src="/images/Unity3D%5Cimage-20230909134034306.png"
                       alt="image-20230909134034306"
                 ></p>
 <p><strong>CharacterData_SO设置好代码后可以在Create菜单中显示</strong>，将代码中设置基本的HP属性，并在Create中创建Player Data。</p>
@@ -586,7 +586,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230909194442214.png"
+                     data-src="/images/Unity3D%5Cimage-20230909194442214.png"
                       alt="image-20230909194442214"
                 ></p>
 <p><strong>如果Enemy的动画都是只读的</strong>，需要在Project文件夹中，将相应的动画进行ctrl+d复制，并放在自己的文件夹下，这时候就能修改了。</p>
@@ -609,7 +609,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/Unity2D/%5Cimage-20230910150134903.png"
+                     data-src="/images/Unity3D%5Cimage-20230910150134903.png"
                       alt="image-20230910150134903"
                 ></p>
 <div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Dead 状态下的代码</span></span><br><span class="line"><span class="keyword">case</span> EnemyStates.DEAD:</span><br><span class="line">	<span class="comment">// 需要确保Box Collider或者Capsule Collier关闭，这样Player就无法再Enemy死亡后进行攻击判断（因为攻击判断的时候是判断了Tag是Enemy并且有碰撞体Collider）</span></span><br><span class="line">	<span class="comment">// 代码执行顺序还是很重要的，如果执行出来的效果和想象的不一样，可能是顺序问题。</span></span><br><span class="line">    coll.enabled = <span class="literal">false</span>;</span><br><span class="line">    agent.enabled = <span class="literal">false</span>;</span><br><span class="line">    Destroy(gameObject,<span class="number">2.0f</span>);</span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure></div>
