@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Unity3D RPG一、创建URP1）设置URP 在Package Manager中安装Universal RP，下载URP  在Project中创建Renderding -&gt; URP Asset(with Universal Renderer)   在Project Settings：  Graphics：   Quality      需要注意，下载的Package Manager里面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/09/24/Unity3d/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Unity3D RPG一、创建URP1）设置URP 在Package Manager中安装Universal RP，下载URP  在Project中创建Renderding -&gt; URP Asset(with Universal Renderer)   在Project Settings：  Graphics：   Quality      需要注意，下载的Package Manager里面">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212142278.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212230239.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212245575.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212640407.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907213652201.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223726816.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223739749.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223909569.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223954881.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908101905259.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908104104983.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908135850939.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908140905243.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908220958406.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230909134034306.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230909194442214.png">
+<meta property="og:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230910150134903.png">
+<meta property="article:published_time" content="2023-09-24T02:20:30.330Z">
+<meta property="article:modified_time" content="2023-09-22T04:18:39.168Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212142278.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Unity3d" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/24/Unity3d/" class="article-date">
+  <time class="dt-published" datetime="2023-09-24T02:20:30.330Z" itemprop="datePublished">2023-09-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Unity3D-RPG"><a href="#Unity3D-RPG" class="headerlink" title="Unity3D RPG"></a>Unity3D RPG</h1><h2 id="一、创建URP"><a href="#一、创建URP" class="headerlink" title="一、创建URP"></a>一、创建URP</h2><h3 id="1）设置URP"><a href="#1）设置URP" class="headerlink" title="1）设置URP"></a>1）设置URP</h3><ol>
+<li><p>在Package Manager中安装Universal RP，下载URP</p>
+</li>
+<li><p>在Project中创建Renderding -&gt; URP Asset(with Universal Renderer)</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212142278.png" alt="image-20230907212142278"></p>
+</li>
+<li><p>在Project Settings：</p>
+<ul>
+<li><p>Graphics：</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212230239.png" alt="image-20230907212230239"></p>
+</li>
+<li><p>Quality</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212245575.png" alt="image-20230907212245575"></p>
+</li>
+</ul>
+</li>
+</ol>
+<p>需要注意，下载的Package Manager里面的素材都需要支持URP版本，在素材中选择相应的URP版本。</p>
+<h3 id="2）升级当前场景的URP（正确显示模型纹理）"><a href="#2）升级当前场景的URP（正确显示模型纹理）" class="headerlink" title="2）升级当前场景的URP（正确显示模型纹理）"></a>2）升级当前场景的URP（正确显示模型纹理）</h3><p>在Windows -&gt; Rendering -&gt; Render Pipeline Converter中选择Bulit-in的前两项，Initialize Converters后Convert Assets</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907212640407.png" alt="image-20230907212640407"></p>
+<h2 id="二、创建植被或地面-PolyBrush-Probuilder"><a href="#二、创建植被或地面-PolyBrush-Probuilder" class="headerlink" title="二、创建植被或地面(PolyBrush &#x2F; Probuilder)"></a>二、创建植被或地面(PolyBrush &#x2F; Probuilder)</h2><h3 id="1、PolyBrush"><a href="#1、PolyBrush" class="headerlink" title="1、PolyBrush"></a>1、PolyBrush</h3><p>​	在Package Manager里面下载组件之后可以刷植被</p>
+<h3 id="2、ProBuilder"><a href="#2、ProBuilder" class="headerlink" title="2、ProBuilder"></a>2、ProBuilder</h3><p>​	创建地面</p>
+<h3 id="3、ProGrids（不常用）"><a href="#3、ProGrids（不常用）" class="headerlink" title="3、ProGrids（不常用）"></a>3、ProGrids（不常用）</h3><ul>
+<li><p>首先在Edit -&gt; project settings中启用</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907213652201.png" alt="image-20230907213652201"></p>
+</li>
+<li><p>在Package Manager中下载</p>
+</li>
+</ul>
+<h2 id="三、烘焙地图（AI导航系统）"><a href="#三、烘焙地图（AI导航系统）" class="headerlink" title="三、烘焙地图（AI导航系统）"></a>三、烘焙地图（AI导航系统）</h2><p>先在Window -&gt; AI -&gt; Navigatoin中打开导航</p>
+<h3 id="1）静态地图障碍物"><a href="#1）静态地图障碍物" class="headerlink" title="1）静态地图障碍物"></a>1）静态地图障碍物</h3><ol>
+<li><p>将地面在Inspector界面中的static设置为Navigation Static</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223726816.png" alt="image-20230907223726816"></p>
+</li>
+<li><p>设置Tree的static</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223739749.png" alt="image-20230907223739749"></p>
+</li>
+<li><p>给<strong>人物</strong>增加一个Nav Mesh Agent的组件</p>
+<p>设置好大小之后：</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223909569.png" alt="image-20230907223909569"></p>
+<p>需要在Navigation的Bake中调节相应的参数</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230907223954881.png" alt="image-20230907223954881"></p>
+</li>
+</ol>
+<h3 id="2）动态地图障碍物"><a href="#2）动态地图障碍物" class="headerlink" title="2）动态地图障碍物"></a>2）动态地图障碍物</h3><p>对于某个移动的东西</p>
+<p>​	对<strong>任意一个物体</strong>增加一个<strong>Nav Mesh Obstacle</strong>的组件，</p>
+<h2 id="四、人物按照导航移动（UnityEngine-Events）"><a href="#四、人物按照导航移动（UnityEngine-Events）" class="headerlink" title="四、人物按照导航移动（UnityEngine.Events）"></a>四、人物按照导航移动（UnityEngine.Events）</h2><h3 id="1、非单例模式事件"><a href="#1、非单例模式事件" class="headerlink" title="1、非单例模式事件"></a>1、非单例模式事件</h3><p>主要使用了UnityEvent<Vector3>的类</p>
+<ol>
+<li>首先需要引用UnityEngine.Events事件</li>
+<li>创建一个UnityEvent<Vector3>的类，并在继承MonoBehaviour的子类中创建变量。</li>
+<li>注意：这里需要使用[System.Serializable]才能在Unity中看到暴露出来的变量。</li>
+</ol>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908101905259.png" alt="image-20230908101905259"></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Events;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Important to show</span></span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line">[<span class="meta">System.Serializable</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EventVector3</span> : <span class="title">UnityEvent</span>&lt;<span class="title">Vector3</span>&gt;&#123;&#125;</span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> EventVector3 OnMouseClicked;</span><br><span class="line">    RaycastHit hitInfo;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Update is called once per frame</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        SetCursorTexture();</span><br><span class="line">        MouseControl();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetCursorTexture</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);</span><br><span class="line">        <span class="keyword">if</span>(Physics.Raycast(ray, <span class="keyword">out</span> hitInfo))&#123;</span><br><span class="line">            <span class="comment">// 切换鼠标贴图</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Mouse Control</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">MouseControl</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 鼠标左键为0,并且点击不为空</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetMouseButtonDown(<span class="number">0</span>) &amp;&amp; hitInfo.collider != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))&#123;</span><br><span class="line">                OnMouseClicked?.Invoke(hitInfo.point);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>主要代码为：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine.Events;</span><br><span class="line">[<span class="meta">System.Serializable</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EventVector3</span> : <span class="title">UnityEvent</span>&lt;<span class="title">Vector3</span>&gt;&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MouseManager Instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>人物导航的基本属性：</p>
+<ul>
+<li>Angular Speed：转角速度，人物在旋转时候的旋转速度</li>
+<li>Stoppint Distance：是距离物体多远的距离停下，一般人物手中持有不同的武器就可以设置不同的停止距离</li>
+<li>Auto Braking：给人物设置一下缓慢停下来的过程。</li>
+</ul>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908104104983.png" alt="image-20230908104104983"></p>
+<ul>
+<li>使用NavMeshAgent的类，需要在前面<strong>using UnityEngine.AI</strong></li>
+</ul>
+<h2 id="五、将函数注册到Event的中不使用拖拽的方式"><a href="#五、将函数注册到Event的中不使用拖拽的方式" class="headerlink" title="五、将函数注册到Event的中不使用拖拽的方式"></a>五、将函数注册到Event的中不使用拖拽的方式</h2><p>需要将MouseManger修改成一个单例模式</p>
+<h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><ul>
+<li>MouseManger：设置为单例模式的类</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// set static parameters</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MouseManager Instance;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">event</span> Action&lt;Vector3&gt; OnMouseClicked;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Awake</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Instance != <span class="literal">null</span>)</span><br><span class="line">            Destory(gameObject);</span><br><span class="line">        Instance = <span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>PlayController：必须要设置一个和OnMouseClicked的输入类型一样的函数</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 增加订阅的方式 ：+=</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 将函数注册进去</span></span><br><span class="line">    MouseManager.Instance.OnMouseClicked += MoveToTarget;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 定义函数，输入类型Vector3要与Action&lt;Vector3&gt;保持一致</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">MoveToTarget</span>(<span class="params">Vector3 target</span>)</span>&#123;</span><br><span class="line">        agent.destination = target;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>游戏运行时，<strong>会触发所有在MouseManger里面注册的函数</strong>（在每个Controller中进行响应的函数注册）</p>
+<h2 id="六、CinaMarchine"><a href="#六、CinaMarchine" class="headerlink" title="六、CinaMarchine"></a>六、CinaMarchine</h2><ol>
+<li><p>在Package Manager中下载CinaMarchine之后</p>
+</li>
+<li><p>固定视角：在GameObject的CinaMarchine中创建一个Virtual Camera</p>
+<ul>
+<li>Follow：选择要跟随的角色</li>
+<li>Body：选择Framing Transposer</li>
+<li>Aim：选择Nothing</li>
+</ul>
+</li>
+<li><p>转动视角（非固定视角）FreeLook</p>
+</li>
+</ol>
+<h2 id="七、增加雾效-后处理"><a href="#七、增加雾效-后处理" class="headerlink" title="七、增加雾效&#x2F;后处理"></a>七、增加雾效&#x2F;后处理</h2><ul>
+<li><p>雾效</p>
+<p>Window -&gt; Rendering -&gt; Lighting -&gt; Enviroments -&gt; Other Settings -&gt; Fog</p>
+</li>
+<li><p>后处理</p>
+<p>场景升级为URP自带后处理（Post-Processing)。直接在Hierachy中右键创建Volume。并在Profile中创建new。并在Main Camera的Camera中启用post-processing</p>
+</li>
+</ul>
+<h2 id="八、动画"><a href="#八、动画" class="headerlink" title="八、动画"></a>八、动画</h2><ol>
+<li>添加Animator组件</li>
+<li>创建一个Animation Controller并赋值给角色Animator组件</li>
+<li>打开创建的PlayController，创建一个Blend Tree（动画混合树）打开Blend Tree，在右侧添加Add Motion Fields，并在Parameter选择Speed（左侧创建Speed变量）。</li>
+<li>在角色代码里获取Animator组件的变量，并使用SetFloat将导航的速度传给动画的Speed，完成动画效果。</li>
+</ol>
+<h2 id="九、Shader-Graph"><a href="#九、Shader-Graph" class="headerlink" title="九、Shader Graph"></a>九、Shader Graph</h2><p>​	在<strong>人物</strong>在<strong>被遮挡的物体</strong>后面实现<strong>遮挡剔除</strong>的效果。<strong>人物在树之后</strong>的时候<strong>显示人物轮廓</strong></p>
+<ol>
+<li><p>创建Shader Graph：在Project中Create -&gt; Shader Graph -&gt;URP -&gt; Unlit Shader Graph</p>
+<p>这里就是连连看的Shader渲染</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908135850939.png" alt="image-20230908135850939"></p>
+</li>
+<li><p>然后再URP的Setting中进行设置，首先打开Universal Render Pipeline Asset_Renderer</p>
+<ul>
+<li><p>在Add Renderer Feature中选择Render Object(Exprimental)</p>
+</li>
+<li><p>添加两个Render Feature：一个前景，一个背景</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908140905243.png" alt="image-20230908140905243"></p>
+</li>
+</ul>
+<p>一个地图走到树中间时，点击树，并不会走到树遮挡到的路的位置。有两种方法：</p>
+<p>1）直接让树忽略射线，先选中所有的树，在Layer中选择2: Ignore Raycast</p>
+<p>2）选中所有的树，关闭掉所有的Mesh Collider</p>
+</li>
+</ol>
+<h2 id="十、设置敌人"><a href="#十、设置敌人" class="headerlink" title="十、设置敌人"></a>十、设置敌人</h2><p>尝试把同一个<strong>脚本自动挂载</strong>到<strong>敌人</strong>身上</p>
+<ol>
+<li><p>创建一个Enemy Controller的Scripts</p>
+</li>
+<li><p>增加代码**[RequireComponent(typeof(NavMeshAgent))]<strong>，</strong>挂载该代码<strong>就会</strong>自动<strong>将</strong>NavMeshAgent组件挂载**上去。</p>
+<ul>
+<li><p>这里需要注意的是，如果是要更改<strong>鼠标所指位置的图标</strong>，<strong>需要</strong>不同物体的<strong>标签标记</strong></p>
+<blockquote>
+<p>首先全局有一个MouseManager，在代码里设置5中public图标样式（Textrue2D）</p>
+<p>将MouseManager挂载到空物体–MouseManager–上，并将相应的图像进行赋值</p>
+<p>在代码里面，获取鼠标位置碰撞物的<strong>Tag标签</strong>。能使用<strong>Tag的前提是有碰撞体组件的</strong>。</p>
+</blockquote>
+</li>
+<li><p>如果是<strong>更改</strong>不同<strong>物体的渲染</strong>使得<strong>人物和敌人都可以在树后方显示（这里需要使用的是Layer层）</strong>，则同样要在URP的设置里把<strong>前后向渲染中的敌人加上</strong>。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="1、攻击敌人"><a href="#1、攻击敌人" class="headerlink" title="1、攻击敌人"></a>1、攻击敌人</h3><ul>
+<li><p>首先在<strong>MouseManger</strong>里设置一个Event</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置Event</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">event</span> Action&lt;GameObject&gt; OnEnemyClicked;</span><br><span class="line"><span class="comment">//修改Mouse Control</span></span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">MouseControl</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 鼠标左键为0,并且点击不为空</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetMouseButtonDown(<span class="number">0</span>) &amp;&amp; hitInfo.collider != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))&#123;</span><br><span class="line">                OnMouseClicked?.Invoke(hitInfo.point);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 新增</span></span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Enemy&quot;</span>))&#123;</span><br><span class="line">                OnEnemyClicked?.Invoke(hitInfo.collider.gameobject);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>然后再<strong>PlayController给Event增加一个函数</strong>，并<strong>获取函数返回的GameObject</strong></p>
+</li>
+<li><p>将<strong>人物不停的移动到敌人</strong>面前再执行攻击就需要<strong>不停的判断当前目标与Player的距离</strong>，不好使用While循环，使用<strong>协程</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 攻击函数</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">EventAttack</span>(<span class="params">GameObject target</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(target != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// 赋值攻击的返回目标</span></span><br><span class="line">            attackTarget = target;</span><br><span class="line">            <span class="comment">// 使用协程</span></span><br><span class="line">             StartCoroutine(MoveToAttackTarget());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用协程</span></span><br><span class="line">    <span class="function">IEnumerator <span class="title">MoveToAttackTarget</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        agent.isStopped = <span class="literal">false</span>;</span><br><span class="line">        <span class="comment">// 首先将Player转向目标方向</span></span><br><span class="line">        transform.LookAt(attackTarget.transform);</span><br><span class="line"><span class="keyword">while</span>(Vector3.Distance(transform.position,attackTarget.transform.position) &gt; <span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            agent.destination = attackTarget.transform.position;</span><br><span class="line">            <span class="keyword">yield</span> <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        agent.isStopped = <span class="literal">true</span>;</span><br><span class="line">        <span class="comment">//Attack</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(lastAttackTime &lt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            anim.SetTrigger(<span class="string">&quot;Attack&quot;</span>);</span><br><span class="line">            lastAttackTime = <span class="number">0.5f</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">MoveToTarget</span>(<span class="params">Vector3 target</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 打断协程</span></span><br><span class="line">        StopAllCoroutines();</span><br><span class="line">        agent.isStopped = <span class="literal">false</span>;</span><br><span class="line">        agent.destination = target;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>但是以上会存在一些问题，由于<strong>全局的MouseManger</strong>会在<strong>点击鼠标时触发OnMouseClicked和OnEnemyClicked的其中一个</strong>函数。</p>
+<p>在OnEnemyClicked被触发的时候，Player会一直移动到敌方的位置，并且不可打断。</p>
+<p>因为这时候已经开始调用协程了。在OnMouseClicked的MoveToTarget函数里面使用**StopAllCoroutines()**就可以打断协程。完成攻击时候的其他位置移动了。</p>
+</li>
+</ul>
+<h3 id="2、-敌人追击"><a href="#2、-敌人追击" class="headerlink" title="2、 敌人追击"></a>2、 敌人追击</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">Header(<span class="string">&quot;Basic Settings&quot;</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">float</span> sightRadius;</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">bool</span> isGuard;</span><br><span class="line"><span class="keyword">private</span> <span class="built_in">float</span> speed;</span><br><span class="line"><span class="keyword">public</span> GameObject attackTatget;</span><br><span class="line"></span><br><span class="line"><span class="comment">// bool 配合动画</span></span><br><span class="line"><span class="built_in">bool</span> isWalk;</span><br><span class="line"><span class="built_in">bool</span> isChase;</span><br><span class="line"><span class="built_in">bool</span> isFollow;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Awake</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    agent = GetComponent&lt;UnityEngine.AI.NavMeshAgent&gt;();</span><br><span class="line">    speed = agent.speed;</span><br><span class="line">    anim = GetComponent&lt;Animator&gt;();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    SwitchStates();</span><br><span class="line">    SwitchAnimation();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SwitchAnimation</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    anim.SetBool(<span class="string">&quot;Walk&quot;</span>,isWalk);</span><br><span class="line">    anim.SetBool(<span class="string">&quot;Chase&quot;</span>,isChase);</span><br><span class="line">    anim.SetBool(<span class="string">&quot;Follow&quot;</span>,isFollow);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SwitchStates</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 如果发现player就切换CHASE</span></span><br><span class="line">    <span class="keyword">if</span>(FoundPlayer())</span><br><span class="line">    &#123;</span><br><span class="line">        enemystates = EnemyStates.CHASE;</span><br><span class="line">        <span class="comment">// Debug.Log(&quot;Find Player&quot;);</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span>(enemystates)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> EnemyStates.GUARD:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> EnemyStates.PATROL:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> EnemyStates.CHASE:</span><br><span class="line">            <span class="comment">// <span class="doctag">TODO:</span> 追Player</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// <span class="doctag">TODO:</span> 在攻击范围内则攻击</span></span><br><span class="line">            <span class="comment">// <span class="doctag">TODO:</span> 配合动画</span></span><br><span class="line">            isWalk = <span class="literal">false</span>;</span><br><span class="line">            isChase = <span class="literal">true</span>;</span><br><span class="line">            agent.speed = speed;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(!FoundPlayer())</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// <span class="doctag">TODO:</span> 拉回上一个状态</span></span><br><span class="line">                isFollow = <span class="literal">false</span>;</span><br><span class="line">                agent.detination = transform.position;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                isFollow = <span class="literal">true</span>;</span><br><span class="line">                agent.destination = attackTatget.transform.position;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> EnemyStates.DEAD:</span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 敌人巡逻查找敌人追击</span></span><br><span class="line"><span class="function"><span class="built_in">bool</span> <span class="title">FoundPlayer</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> colliders = Physics.OverlapSphere(transform.position,sightRadius);</span><br><span class="line">    <span class="keyword">foreach</span> (<span class="keyword">var</span> target <span class="keyword">in</span> colliders)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(target.CompareTag(<span class="string">&quot;Player&quot;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            attackTatget = target.gameObject;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    attackTatget = <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、敌人的巡逻移动"><a href="#3、敌人的巡逻移动" class="headerlink" title="3、敌人的巡逻移动"></a>3、敌人的巡逻移动</h3><p>为了更好的可视化变量范围，使用代码：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">OnDrawGizmosSelected</span>()</span>&#123;</span><br><span class="line">    Gizmos.color = Color.blue;</span><br><span class="line">    Gizmos.DrawWireSphere(transform.position,sightRadius);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230908220958406.png" alt="image-20230908220958406"></p>
+<p>每次都在Patrol的范围内随机选择一个点进行移动，但是可能会跑出去。每次都在新的位置的Patrol范围内移动。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">Header(<span class="string">&quot;Patrol State&quot;</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">float</span> patrolRange;</span><br><span class="line"><span class="keyword">private</span> Vector3 wayPoint;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(isGuard)&#123;</span><br><span class="line">        enemystates = EnemyStates.GUARD;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        enemystates = EnemyStates.PATROL;</span><br><span class="line">        GetNewWayPoint();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">GetNewWayPoint</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">float</span> randomX = Random.Range(-patrolRange,patrolRange);</span><br><span class="line">    <span class="built_in">float</span> randomZ = Random.Range(-patrolRange,patrolRange);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 修改前</span></span><br><span class="line">    <span class="comment">//Vector3 randomPoint = new Vector3(transform.position.x + randomX,</span></span><br><span class="line">                                      <span class="comment">//transform.position.y,transform.position.z + randomZ);</span></span><br><span class="line">    <span class="comment">//修改后:</span></span><br><span class="line">            Vector3 randomPoint = <span class="keyword">new</span> Vector3(guardPos.x + randomX,</span><br><span class="line">        transform.position.y,guardPos.z + randomZ);</span><br><span class="line">    <span class="comment">//FIXME : 可能出现问题</span></span><br><span class="line">    wayPoint = randomPoint;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(enemystates)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> EnemyStates.GUARD:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> EnemyStates.PATROL:</span><br><span class="line">        isChase = <span class="literal">false</span>;</span><br><span class="line">        agent.speed = speed * <span class="number">0.5f</span>;</span><br><span class="line">        <span class="keyword">if</span>(Vector3.Distance(wayPoint,transform.position) &lt;= agent.stoppingDistance)&#123;</span><br><span class="line"></span><br><span class="line">            isWalk = <span class="literal">false</span>;</span><br><span class="line">            GetNewWayPoint();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            isWalk = <span class="literal">true</span>;</span><br><span class="line">            agent.destination = wayPoint;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> EnemyStates.CHASE:</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> 追Player</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> 在攻击范围内则攻击</span></span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> 配合动画</span></span><br><span class="line">        isWalk = <span class="literal">false</span>;</span><br><span class="line">        isChase = <span class="literal">true</span>;</span><br><span class="line">        agent.speed = speed;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(!FoundPlayer())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// <span class="doctag">TODO:</span> 拉回上一个状态</span></span><br><span class="line">            isFollow = <span class="literal">false</span>;</span><br><span class="line">            agent.destination = transform.position;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            isFollow = <span class="literal">true</span>;</span><br><span class="line">            agent.destination = attackTatget.transform.position;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> EnemyStates.DEAD:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>但是以上会出现，如果随机选中到了不可能移动的点，就会卡在那里。</p>
+<ul>
+<li>所以需要使用NavMeshSample，只在导航地图中采样。</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">GetNewWayPoint</span>()</span></span><br><span class="line">    &#123;   </span><br><span class="line">        remainLookAtTime = lookAtTime;</span><br><span class="line">        <span class="built_in">float</span> randomX = Random.Range(-patrolRange,patrolRange);</span><br><span class="line">        <span class="built_in">float</span> randomZ = Random.Range(-patrolRange,patrolRange);</span><br><span class="line"></span><br><span class="line">        Vector3 randomPoint = <span class="keyword">new</span> Vector3(guardPos.x + randomX,transform.position.y,guardPos.z + randomZ);</span><br><span class="line">        <span class="comment">//FIXME : 可能出现问题</span></span><br><span class="line">        <span class="comment">// wayPoint = randomPoint;</span></span><br><span class="line">        UnityEngine.AI.NavMeshHit hit;</span><br><span class="line">        <span class="comment">// 只在导航地图中采样</span></span><br><span class="line">        wayPoint = UnityEngine.AI.NavMesh.SamplePosition(randomPoint,<span class="keyword">out</span> hit,patrolRange,<span class="number">1</span>) ? hit.position:transform.position;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> EnemyStates.PATROL:</span><br><span class="line">isChase = <span class="literal">false</span>;</span><br><span class="line">agent.speed = speed * <span class="number">0.5f</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断是否到了随机巡逻点</span></span><br><span class="line"><span class="keyword">if</span>(Vector3.Distance(wayPoint,transform.position) &lt;= agent.stoppingDistance)&#123;</span><br><span class="line">    isWalk = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(remainLookAtTime &gt;<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        remainLookAtTime -= Time.deltaTime;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        GetNewWayPoint();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    isWalk = <span class="literal">true</span>;</span><br><span class="line">    agent.destination = wayPoint;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+<p>现在是脱战后在原地不动，需要改成脱战后巡逻：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> EnemyStates.CHASE:</span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 追Player</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 在攻击范围内则攻击</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 配合动画</span></span><br><span class="line">isWalk = <span class="literal">false</span>;</span><br><span class="line">isChase = <span class="literal">true</span>;</span><br><span class="line">agent.speed = speed;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!FoundPlayer())</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> 拉回上一个状态</span></span><br><span class="line">    isFollow = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(remainLookAtTime &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        agent.destination = transform.position;</span><br><span class="line">        remainLookAtTime -= Time.deltaTime;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(isGuard)&#123;</span><br><span class="line">        enemystates = EnemyStates.GUARD;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        enemystates = EnemyStates.PATROL;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    isFollow = <span class="literal">true</span>;</span><br><span class="line">    agent.destination = attackTatget.transform.position;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="十一、数据分离（状态存储）"><a href="#十一、数据分离（状态存储）" class="headerlink" title="十一、数据分离（状态存储）"></a>十一、数据分离（状态存储）</h2><h3 id="1、人物基本数值"><a href="#1、人物基本数值" class="headerlink" title="1、人物基本数值"></a>1、人物基本数值</h3><ol>
+<li><p>创建状态文件夹Characters stats</p>
+<ul>
+<li>MonoBehavior:</li>
+<li>ScriptableObject:</li>
+</ul>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230909134034306.png" alt="image-20230909134034306"></p>
+<p><strong>CharacterData_SO设置好代码后可以在Create菜单中显示</strong>，将代码中设置基本的HP属性，并在Create中创建Player Data。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"></span><br><span class="line">[<span class="meta">CreateAssetMenu(fileName = <span class="string">&quot;New Data&quot;</span>,menuName = <span class="string">&quot;Character Stats/Data&quot;</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CharacterData_SO</span> : <span class="title">ScriptableObject</span></span><br><span class="line">&#123;</span><br><span class="line">    [<span class="meta">Header(<span class="string">&quot;Stats Info&quot;</span>)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> maxHealth;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> currentHealth;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> baseDefence;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> currentDefence;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>在MonoBehavior下<strong>创建CharacterStats脚本</strong>，<strong>用于挂载CharacterData_SO（这个类没有继承MonoBehavior没法进行挂载）</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 大括号里有一个get表示这个变量可以get不能set。如果既有get又有set表示变量两个都可以</span></span><br><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> MaxHealth&#123;</span><br><span class="line">    <span class="keyword">get</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(characterData != <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">return</span> characterData.maxHealth;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">set</span>&#123;</span><br><span class="line">        characterData.maxHealth = <span class="keyword">value</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>最后<strong>将CharacterStats脚本挂载到Player和Slime</strong>上，再<strong>赋值相应的数据文件</strong>。可以实现数据设置和角色分离</p>
+</li>
+</ol>
+<h3 id="2、攻击数值"><a href="#2、攻击数值" class="headerlink" title="2、攻击数值"></a>2、攻击数值</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">case</span> EnemyStates.CHASE:</span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 配合动画</span></span><br><span class="line">isWalk = <span class="literal">false</span>;</span><br><span class="line">isChase = <span class="literal">true</span>;</span><br><span class="line">agent.speed = speed;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!FoundPlayer())</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> 拉回上一个状态</span></span><br><span class="line">    isFollow = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(remainLookAtTime &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        agent.destination = transform.position;</span><br><span class="line">        remainLookAtTime -= Time.deltaTime;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(isGuard)&#123;</span><br><span class="line">        enemystates = EnemyStates.GUARD;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        enemystates = EnemyStates.PATROL;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    isFollow = <span class="literal">true</span>;</span><br><span class="line">    agent.isStopped = <span class="literal">false</span>;</span><br><span class="line">    agent.destination = attackTatget.transform.position;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 在攻击范围内则攻击</span></span><br><span class="line"><span class="keyword">if</span>(TargetInAttackRange() || TargetInSkillRange())</span><br><span class="line">&#123;</span><br><span class="line">    isFollow = <span class="literal">false</span>;</span><br><span class="line">    agent.isStopped = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">if</span>(lastAttackTime &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        lastAttackTime = characterStats.attackData.coolDown;</span><br><span class="line">        <span class="comment">// 暴击判断</span></span><br><span class="line">        characterStats.isCritical = Random.<span class="keyword">value</span>  &lt; characterStats.attackData.criticalChance;</span><br><span class="line">        <span class="comment">// 执行攻击</span></span><br><span class="line">        Attack();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Attack</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    transform.LookAt(attackTatget.transform);</span><br><span class="line">    <span class="keyword">if</span>(TargetInAttackRange())</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 近身攻击动画</span></span><br><span class="line">        anim.SetTrigger(<span class="string">&quot;Attack&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(TargetInSkillRange())</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 技能攻击动画</span></span><br><span class="line">        anim.SetTrigger(<span class="string">&quot;Skill&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">bool</span> <span class="title">TargetInAttackRange</span>()</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(attackTatget != <span class="literal">null</span>)</span><br><span class="line">        <span class="keyword">return</span> Vector3.Distance(attackTatget.transform.position,transform.position) &lt;= characterStats.attackData.attackRange;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">bool</span> <span class="title">TargetInSkillRange</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(attackTatget != <span class="literal">null</span>)</span><br><span class="line">        <span class="keyword">return</span> Vector3.Distance(attackTatget.transform.position,transform.position) &lt;= characterStats.attackData.skillRange;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="十二、实现伤害函数"><a href="#十二、实现伤害函数" class="headerlink" title="十二、实现伤害函数"></a>十二、实现伤害函数</h2><ol>
+<li><p>在CharcterStats中实现TakeDamage函数()</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">TakeDamage</span>(<span class="params">CharacterStats attacker,CharacterStats defener</span>)</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">int</span> damage = Mathf.Max(attacker.CurrentDamage() - defener.currentDefence,<span class="number">0</span>);</span><br><span class="line">currentHealth = Mathf.Max(currentHealth - damage,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> update UI</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 经验update</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="built_in">int</span> <span class="title">CurrentDamage</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">float</span> coreDamage = UnityEngine.Random.Range(attackData.minDamage,attackData.maxDamage);</span><br><span class="line">        <span class="keyword">if</span>(isCritical) &#123;</span><br><span class="line">            coreDamage *= attackData.criticalMultiplier;</span><br><span class="line">            Debug.Log(<span class="string">&quot;暴击！&quot;</span> + coreDamage);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> (<span class="built_in">int</span>) coreDamage;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>在Player和Enemy的Controller中实现伤害函数Hit</p>
+<ul>
+<li>PlayerController</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Animation Event</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Hit</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> targetStats = attackTarget.GetComponent&lt;CharacterStats&gt;();</span><br><span class="line">    targetStats.TakeDamage(characterStats,targetStats);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>EnemyController:</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>找到伤害动画位置，打开WIndow -&gt; Animation -&gt;Animation 的Attack动画中的一帧，在此增加一个关键帧，并选择HIt函数</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230909194442214.png" alt="image-20230909194442214"></p>
+<p><strong>如果Enemy的动画都是只读的</strong>，需要在Project文件夹中，将相应的动画进行ctrl+d复制，并放在自己的文件夹下，这时候就能修改了。</p>
+</li>
+</ol>
+<h2 id="十三、敌人的守卫和死亡模式"><a href="#十三、敌人的守卫和死亡模式" class="headerlink" title="十三、敌人的守卫和死亡模式"></a>十三、敌人的守卫和死亡模式</h2><p>请注意每次试玩之前要把所有Data里面的数据还原</p>
+<h3 id="1、回到守卫模式"><a href="#1、回到守卫模式" class="headerlink" title="1、回到守卫模式"></a>1、回到守卫模式</h3><ul>
+<li>计算<strong>当前位置和守卫位置的距离</strong>，然后将导航终点设置为守卫位置，一旦小于停止距离就暂停</li>
+</ul>
+<p>（计算距离而言<strong>SqrMagnitude和Distance的性能开销</strong>在小项目相差不大，实际上是前者开销更小）</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> EnemyStates.GUARD:</span><br><span class="line">isChase = <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(transform.position != guardPos)</span><br><span class="line">&#123;</span><br><span class="line">isWalk = <span class="literal">true</span>;</span><br><span class="line">agent.isStopped  = <span class="literal">false</span>;</span><br><span class="line">agent.destination = guardPos;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(Vector3.SqrMagnitude(guardPos - transform.position) &lt;= agent.stoppingDistance)&#123;</span><br><span class="line">isWalk = <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>但是这里守卫敌人虽然能够回去，角度却是背对我们的，需要将角度转回来。</strong></li>
+</ul>
+<p>Unity当中rotation的参数数值使用的是<strong>四元数Quaternion</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> EnemyStates.GUARD:</span><br><span class="line">isChase = <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(transform.position != guardPos)</span><br><span class="line">&#123;</span><br><span class="line">    isWalk = <span class="literal">true</span>;</span><br><span class="line">    agent.isStopped  = <span class="literal">false</span>;</span><br><span class="line">    agent.destination = guardPos;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(Vector3.SqrMagnitude(guardPos - transform.position) &lt;= agent.stoppingDistance)&#123;</span><br><span class="line">        isWalk = <span class="literal">false</span>;</span><br><span class="line">        <span class="comment">// 使用Lerp让旋转慢慢转回去，0.01f是旋转的程度，范围为[0,1]</span></span><br><span class="line">        transform.rotation = Quaternion.Lerp(transform.rotation,guardRotation,<span class="number">0.01f</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、设置死亡动画"><a href="#2、设置死亡动画" class="headerlink" title="2、设置死亡动画"></a>2、设置死亡动画</h3><p>在Slime的Animator中<strong>增加一个Death Layer层，并将层的权重设置为1.（注意，一定要将层的权重设置为1）</strong>。记得将Can Transition Self取消勾选，不然会一直重复播放死亡。</p>
+<p><img src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230910150134903.png" alt="image-20230910150134903"></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Dead 状态下的代码</span></span><br><span class="line"><span class="keyword">case</span> EnemyStates.DEAD:</span><br><span class="line">	<span class="comment">// 需要确保Box Collider或者Capsule Collier关闭，这样Player就无法再Enemy死亡后进行攻击判断（因为攻击判断的时候是判断了Tag是Enemy并且有碰撞体Collider）</span></span><br><span class="line">	<span class="comment">// 代码执行顺序还是很重要的，如果执行出来的效果和想象的不一样，可能是顺序问题。</span></span><br><span class="line">    coll.enabled = <span class="literal">false</span>;</span><br><span class="line">    agent.enabled = <span class="literal">false</span>;</span><br><span class="line">    Destroy(gameObject,<span class="number">2.0f</span>);</span><br><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+<p>存一下MouseManger代码的备份，因为下面泛式单例模式会修改：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Events;</span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="comment">// [System.Serializable]</span></span><br><span class="line"><span class="comment">// public class EventVector3 : UnityEvent&lt;Vector3&gt;&#123;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MouseManager Instance;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">event</span> Action&lt;Vector3&gt; OnMouseClicked;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">event</span> Action&lt;GameObject&gt; OnEnemyClicked;</span><br><span class="line">    <span class="keyword">public</span> Texture2D point,doorway,attack,target,arrow;</span><br><span class="line">    RaycastHit hitInfo;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Awake</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Instance != <span class="literal">null</span>)</span><br><span class="line">            Destroy(gameObject);</span><br><span class="line">        Instance = <span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Update is called once per frame</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        SetCursorTexture();</span><br><span class="line">        MouseControl();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetCursorTexture</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);</span><br><span class="line">        <span class="keyword">if</span>(Physics.Raycast(ray, <span class="keyword">out</span> hitInfo))&#123;</span><br><span class="line">            <span class="comment">// 切换鼠标贴图</span></span><br><span class="line">            <span class="keyword">switch</span>(hitInfo.collider.gameObject.tag)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&quot;Ground&quot;</span>:</span><br><span class="line">                Cursor.SetCursor(target,<span class="keyword">new</span> Vector2(<span class="number">16</span>,<span class="number">16</span>),CursorMode.Auto);<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&quot;Enemy&quot;</span>:</span><br><span class="line">                Cursor.SetCursor(attack,<span class="keyword">new</span> Vector2(<span class="number">16</span>,<span class="number">16</span>),CursorMode.Auto);<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">MouseControl</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 鼠标左键为0,并且点击不为空</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetMouseButtonDown(<span class="number">0</span>) &amp;&amp; hitInfo.collider != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))&#123;</span><br><span class="line">                OnMouseClicked?.Invoke(hitInfo.point);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Enemy&quot;</span>))&#123;</span><br><span class="line">                OnEnemyClicked?.Invoke(hitInfo.collider.gameObject);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="十四、泛型单例模式：GameManager控制游戏进度（Player死亡表示游戏结束）"><a href="#十四、泛型单例模式：GameManager控制游戏进度（Player死亡表示游戏结束）" class="headerlink" title="十四、泛型单例模式：GameManager控制游戏进度（Player死亡表示游戏结束）"></a>十四、泛型单例模式：GameManager控制游戏进度（Player死亡表示游戏结束）</h2><p>GameManager用于控制游戏进度，并且将设置成一个单例模式，但是每个都设置成单例模式会比较麻烦，所以需要设计一个泛型单例模式。然后将所有的Manager都继承于这个泛型单例。</p>
+<ul>
+<li>泛型类（基类）Singelton</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第一个Singleton&lt;T&gt;表示他是一个泛型</span></span><br><span class="line"><span class="comment">// where T:Singleton&lt;T&gt;是对泛型T的约束，表示T必须是Singleton类的子类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Singleton</span>&lt;<span class="title">T</span>&gt;: <span class="title">MonoBehaviour</span> <span class="keyword">where</span> <span class="title">T</span>:<span class="title">Singleton</span>&lt;<span class="title">T</span>&gt;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 单例模式的基础写法</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> T instance;</span><br><span class="line">    <span class="comment">// 由于instance标量是private，需要用Instance暴露给外界</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> T Instance&#123;</span><br><span class="line">        <span class="keyword">get</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> instance;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建一个虚函数让子类的单例类继承后实现</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">Awake</span>()</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance != <span class="literal">null</span>)</span><br><span class="line">         &#123;   </span><br><span class="line">            Destroy(gameObject);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            instance = (T)<span class="keyword">this</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建一个布尔量判断instance是否为空</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> IsInitalized&#123;</span><br><span class="line">        <span class="keyword">get</span>&#123;<span class="keyword">return</span> instance != <span class="literal">null</span>&#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">OnDestroy</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">this</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            instance = <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/24/Unity3d/" data-id="clmwu1pdv0002zot20r9yb9pp" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/24/%E7%AE%97%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/24/Unity2d/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/24/%E7%AE%97%E6%B3%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/24/Unity3d/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/24/Unity2d/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/24/My-New-Post/">My New Post</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
