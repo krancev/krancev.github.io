@@ -4,6 +4,9 @@
     <title>Unity 3D</title>
     <url>/2023/09/24/Unity-3D/</url>
     <content><![CDATA[]]></content>
+      <tags>
+        <tag>Unity</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -138,11 +141,12 @@
 <li><p>要解决和自己碰撞的问题，和<strong>图层和碰撞</strong>有关</p>
 <p>​	要修复这个碰撞问题，正确方法是使用<strong>图层</strong>。<strong>图层</strong>可将<strong>游戏对象</strong>分组在一起，以便可以对它们进行筛选。你的目标是创建一个<strong>角色图层</strong>来放入 <strong>Ruby 游戏对象</strong>，然后创建一个<strong>飞弹图层</strong>来放入所有飞弹。</p>
 <p>​	然后可以告诉<strong>物理系统</strong>，<strong>角色图层</strong>和<strong>飞弹图层</strong>不能碰撞，因此物理系统将忽略这些图层中的对象之间的所有碰撞。</p>
-<p><strong>在一下设置中取消掉相互之间的碰撞</strong><img  
+<p><strong>在一下设置中取消掉相互之间的碰撞</strong></p>
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/image-1.png"
-                      alt="Alt text"
+                     data-src="E:\project\Hexo\source\Images\Unity2D\Unity2D_0.png"
+                      alt="Unity2D_0"
                 ></p>
 </li>
 </ul>
@@ -175,8 +179,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/image.png"
-                      alt="Alt text"
+                     data-src="E:\project\Hexo\source\Images\Unity2D\Unity2D_1.png"
+                      alt="Unity2D_1"
                 ></p>
 </li>
 </ol>
@@ -262,8 +266,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="C:\Users\Baicha\AppData\Roaming\Typora\typora-user-images\image-20230906153132325.png"
-                      alt="image-20230906153132325"
+                     data-src="E:\project\Hexo\source\Images\Unity2D\Unity2D_2.png"
+                      alt="Unity2D_2"
                 ></p>
 <p>！！！！为什么在 Ruby 上使用<strong>音频源</strong>，而不是在可收集对象上使用？很简单，因为<strong>音频源 (Audio Source)</strong> 是一个组件。当 Ruby 拾取了可收集对象后，这个可收集对象就被销毁了。这时也将销毁<strong>音频源</strong>并停止播放声音。</p>
 <p>通过<strong>音频源</strong>在 Ruby 上播放声音，即使可收集对象被销毁，也可以播放声音。</p>
@@ -278,5 +282,8 @@
 <p>​	<strong>4.<strong>在左下方的 <strong>Platform</strong> 部分中选择要在哪个平台上运行游戏。默认情况下，</strong>编辑器</strong>仅支持安装该程序的平台。要安装更多平台，请打开 <strong>Unity Hub</strong>，单击 <strong>Installs</strong>，单击相关 <strong>Unity</strong> 版本旁边的三个点，单击 <strong>Add Component</strong>，然后选择平台。</p>
 <p>​	<strong>5.<strong>最后，右下角是与当前所选</strong>平台</strong>相关的设置。这些设置主要用于调试或特殊构建，因此你现在可以忽略大部分的这些设置。</p>
 ]]></content>
+      <tags>
+        <tag>Untiy</tag>
+      </tags>
   </entry>
 </search>
