@@ -144,12 +144,6 @@
 <p><strong>在一下设置中取消掉相互之间的碰撞</strong></p>
 </li>
 </ul>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/Unity2D_0.png"
-                      alt="Alt text"
-                ></p>
 <h3 id="四、虚拟相机：Cinemachine"><a href="#四、虚拟相机：Cinemachine" class="headerlink" title="四、虚拟相机：Cinemachine"></a>四、虚拟相机：Cinemachine</h3><ol>
 <li><p>创建相机：</p>
 <p>​	首先需要在<strong>windows -&gt; package manager</strong>中导入Cinemachine的包（导入完成后会在顶部菜单栏GameObject中显示），调用<strong>GameObject -&gt; Cinemachine -&gt; 2D Camera</strong>就会创建一个虚拟摄像机</p>
