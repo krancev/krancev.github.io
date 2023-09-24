@@ -175,11 +175,11 @@
 </li>
 <li><p>在 <strong>Confiner 游戏对象</strong>上，将 Layer 下拉选单设置为 <strong>Confiner</strong>。</p>
 <p>​	选择 <strong>Edit &gt; Project Settings &gt; Physics 2D</strong>，然后取消勾选 <strong>Confiner</strong> <strong>图层</strong>中的所有条目</p>
-<p><img  
+<p> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\Images\Unity2D\Unity2D_1.png"
-                      alt="Unity2D_1"
+                     data-src="/images/Unity2D/Unity2D_1.png"
+                      alt="Text"
                 ></p>
 </li>
 </ol>
@@ -262,12 +262,8 @@
 <p><strong>5.<strong>现在进入</strong>运行模式</strong>，你在游戏开始后应该会立即听到音乐开始播放。如果音量太大，可以随时用音量滑动条来尝试不同音量。</p>
 <p><strong>注意：</strong>切记，<strong>退出运行模式后</strong>，你在游戏运行过程中所做的任何更改都将被“撤销”，因此请确保记下要使用的值并在退出<strong>运行模式</strong>后调整设置。</p>
 <p>**6.**如果在开发过程中由于任何原因需要使所有声音静音，请单击 <strong>Game 视图</strong>右上角的 <strong>Mute Audio</strong> 按钮。如果在应该听到声音时却听不到任何声音，可以看看是否启用了此按钮。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\Images\Unity2D\Unity2D_2.png"
-                      alt="Unity2D_2"
-                ></p>
+<pre><code>![Text](/images/Unity2D/Unity2D_2.png)
+</code></pre>
 <p>！！！！为什么在 Ruby 上使用<strong>音频源</strong>，而不是在可收集对象上使用？很简单，因为<strong>音频源 (Audio Source)</strong> 是一个组件。当 Ruby 拾取了可收集对象后，这个可收集对象就被销毁了。这时也将销毁<strong>音频源</strong>并停止播放声音。</p>
 <p>通过<strong>音频源</strong>在 Ruby 上播放声音，即使可收集对象被销毁，也可以播放声音。</p>
 <h4 id="空间化声音"><a href="#空间化声音" class="headerlink" title="空间化声音"></a>空间化声音</h4><ol>
