@@ -252,7 +252,7 @@
 <p><strong>3.</strong> <strong>音频源</strong></p>
 <p>​	音频源 (Audio Source) 是一个组件，可以在该组件所在的<strong>游戏对象</strong>的位置播放<strong>音频剪辑</strong>。音频源的位置是相对于<strong>音频监听器</strong>的位置，这让<strong>音频系统</strong>可以混合声音，以便可以产生正确的空间感（如果我们使用空间化声音）。</p>
 <p>​	即使不使用空间化声音，例如对于背景音乐，仍然可以在<strong>游戏对象</strong>上使用<strong>音频源</strong>，因为这样可以播放声音。</p>
-<h4 id="背景音乐"><a href="#背景音乐" class="headerlink" title="背景音乐"></a>背景音乐</h4><p><strong>1.<strong>创建一个空的</strong>游戏对象</strong>，将其命名为 <strong>BackgroundMusic</strong>，并为其添加一个 <strong>Audio Source</strong> 组件：</p>
+<h4 id="背景音乐"><a href="#背景音乐" class="headerlink" title="背景音乐"></a>背景音乐</h4><p><strong>1.<strong>创建一个空的</strong>游戏对象</strong>，将其命名为 <strong>BackgroundMusic</strong>，并为其添加一个 <strong>Audio Source</strong> 组件。</p>
 <p>**2.**将项目的 Audio 文件夹中名为 <strong>2D MUSIC LOOP</strong> 的音频剪辑拖放到 <strong>AudioClip</strong> 属性字段中。</p>
 <p>**3.**务必选中 <strong>Loop</strong> 选项，这样可以让音乐从头到尾不断循环播放。</p>
 <p>**4.**然后检查 <strong>Spatial Blend</strong> 滑动条，该滑动条可以从 <strong>2D</strong>（左侧）滑动到 <strong>3D</strong>（右侧）。</p>
