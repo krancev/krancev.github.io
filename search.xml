@@ -141,12 +141,11 @@
 <li><p>要解决和自己碰撞的问题，和<strong>图层和碰撞</strong>有关</p>
 <p>​	要修复这个碰撞问题，正确方法是使用<strong>图层</strong>。<strong>图层</strong>可将<strong>游戏对象</strong>分组在一起，以便可以对它们进行筛选。你的目标是创建一个<strong>角色图层</strong>来放入 <strong>Ruby 游戏对象</strong>，然后创建一个<strong>飞弹图层</strong>来放入所有飞弹。</p>
 <p>​	然后可以告诉<strong>物理系统</strong>，<strong>角色图层</strong>和<strong>飞弹图层</strong>不能碰撞，因此物理系统将忽略这些图层中的对象之间的所有碰撞。</p>
-<p><strong>在一下设置中取消掉相互之间的碰撞</strong></p>
-<p>  <img  
+<p><strong>在一下设置中取消掉相互之间的碰撞</strong><br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Unity2D_0.png"
-                      alt="Alt text"
+                     data-src="/images/Unity_2D/Unity2D_0.png"
+                      alt="Text"
                 ></p>
 </li>
 </ul>
