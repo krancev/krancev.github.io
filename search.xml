@@ -287,8 +287,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_01.png"
-                      alt="Unity3D_01"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907212142278.png"
+                      alt="image-20230907212142278"
                 ></p>
 </li>
 <li><p>在Project Settings：</p>
@@ -297,16 +297,16 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_02.png"
-                      alt="Unity3D_02"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907212230239.png"
+                      alt="image-20230907212230239"
                 ></p>
 </li>
 <li><p>Quality</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_03.png"
-                      alt="Unity3D_03"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907212245575.png"
+                      alt="image-20230907212245575"
                 ></p>
 </li>
 </ul>
@@ -317,8 +317,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_04.png"
-                      alt="Unity3D_04"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907212640407.png"
+                      alt="image-20230907212640407"
                 ></p>
 <h2 id="二、创建植被或地面-PolyBrush-Probuilder"><a href="#二、创建植被或地面-PolyBrush-Probuilder" class="headerlink" title="二、创建植被或地面(PolyBrush &#x2F; Probuilder)"></a>二、创建植被或地面(PolyBrush &#x2F; Probuilder)</h2><h3 id="1、PolyBrush"><a href="#1、PolyBrush" class="headerlink" title="1、PolyBrush"></a>1、PolyBrush</h3><p>​	在Package Manager里面下载组件之后可以刷植被</p>
 <h3 id="2、ProBuilder"><a href="#2、ProBuilder" class="headerlink" title="2、ProBuilder"></a>2、ProBuilder</h3><p>​	创建地面</p>
@@ -327,8 +327,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_05.png"
-                      alt="Unity3D_05"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907213652201.png"
+                      alt="image-20230907213652201"
                 ></p>
 </li>
 <li><p>在Package Manager中下载</p>
@@ -340,16 +340,16 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_06.png"
-                      alt="Unity3D_06"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907223726816.png"
+                      alt="image-20230907223726816"
                 ></p>
 </li>
 <li><p>设置Tree的static</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_07.png"
-                      alt="Unity3D_07"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907223739749.png"
+                      alt="image-20230907223739749"
                 ></p>
 </li>
 <li><p>给<strong>人物</strong>增加一个Nav Mesh Agent的组件</p>
@@ -357,15 +357,15 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_08.png"
-                      alt="Unity3D_08"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907223909569.png"
+                      alt="image-20230907223909569"
                 ></p>
 <p>需要在Navigation的Bake中调节相应的参数</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_09.png"
-                      alt="Unity3D_09"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230907223954881.png"
+                      alt="image-20230907223954881"
                 ></p>
 </li>
 </ol>
@@ -380,8 +380,8 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="E:\project\Hexo\source\images\Unity3D\Unity3D_10.png"
-                      alt="Unity3D_10"
+                     data-src="E:\project\Hexo\source\images\Unity3D\image-20230908101905259.png"
+                      alt="image-20230908101905259"
                 ></p>
 <div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Events;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Important to show</span></span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line">[<span class="meta">System.Serializable</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EventVector3</span> : <span class="title">UnityEvent</span>&lt;<span class="title">Vector3</span>&gt;&#123;&#125;</span><br><span class="line"><span class="comment">// ****************************************</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MouseManager</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> EventVector3 OnMouseClicked;</span><br><span class="line">    RaycastHit hitInfo;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Update is called once per frame</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        SetCursorTexture();</span><br><span class="line">        MouseControl();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">SetCursorTexture</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);</span><br><span class="line">        <span class="keyword">if</span>(Physics.Raycast(ray, <span class="keyword">out</span> hitInfo))&#123;</span><br><span class="line">            <span class="comment">// 切换鼠标贴图</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Mouse Control</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">MouseControl</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 鼠标左键为0,并且点击不为空</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetMouseButtonDown(<span class="number">0</span>) &amp;&amp; hitInfo.collider != <span class="literal">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(hitInfo.collider.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))&#123;</span><br><span class="line">                OnMouseClicked?.Invoke(hitInfo.point);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
