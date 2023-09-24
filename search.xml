@@ -19,6 +19,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Unity 3D</title>
+    <url>/2023/09/24/Unity-3D/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Unity</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Unity 2D</title>
     <url>/2023/09/24/Unity-2D/</url>
     <content><![CDATA[<h2 id="Unity-2D游戏（新手）"><a href="#Unity-2D游戏（新手）" class="headerlink" title="Unity 2D游戏（新手）"></a>Unity 2D游戏（新手）</h2><h3 id="一、新手操作"><a href="#一、新手操作" class="headerlink" title="一、新手操作"></a>一、新手操作</h3><h4 id="从输入中读取比例轴"><a href="#从输入中读取比例轴" class="headerlink" title="从输入中读取比例轴"></a>从输入中读取比例轴</h4><p>​	Edit -&gt; project setting -&gt; input manager</p>
@@ -275,14 +283,6 @@
 ]]></content>
       <tags>
         <tag>Untiy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Unity 3D</title>
-    <url>/2023/09/24/Unity-3D/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Unity</tag>
       </tags>
   </entry>
 </search>
